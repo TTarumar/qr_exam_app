@@ -1,23 +1,26 @@
-import 'package:qr_exam_app/devices/auth/register_view.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:qr_exam_app/const/colors.dart';
 import 'package:qr_exam_app/devices/phone/home_page.dart';
 import 'package:qr_exam_app/services/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'dart:developer' as d;
 
-import 'login_view.dart';
+import 'package:qr_exam_app/view/mobile/auth/mobile_login_view.dart';
 
-class Register extends StatefulWidget {
+
+class MobileRegister extends StatefulWidget {
   @override
-  State<Register> createState() => _RegisterState();
+  State<MobileRegister> createState() => _MobileRegisterState();
 }
 
-class _RegisterState extends State<Register> {
+class _MobileRegisterState extends State<MobileRegister> {
   AuthService authService = AuthService();
   TextEditingController mailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   TextEditingController passwordAgainController = TextEditingController();
   TextEditingController nameController = TextEditingController();
   TextEditingController surnameController = TextEditingController();
+  bool isClicked = false;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +36,7 @@ class _RegisterState extends State<Register> {
             },
             child: Icon(
               Icons.arrow_back_ios,
-              color: Colors.blue[800],
+              color: mainColor,
             )),
       ),
       resizeToAvoidBottomInset: true,
@@ -43,8 +46,8 @@ class _RegisterState extends State<Register> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Image.asset(
-                "assets/register.png",
+              SvgPicture.asset(
+                "assets/register.svg",
                 height: 180,
                 width: 180,
               ),
@@ -58,7 +61,7 @@ class _RegisterState extends State<Register> {
                     "Hemen Kayıt ol",
                     style: TextStyle(
                         color: Colors.black87,
-                        fontSize: size.width * 0.1,
+                        fontSize: size.width * 0.065,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
@@ -73,19 +76,19 @@ class _RegisterState extends State<Register> {
               Padding(
                 padding: EdgeInsets.only(left: 20.0, right: 20),
                 child: Container(
-                  height: size.height * 0.075,
+                  height: size.height * 0.065,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey, width: 0.3),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: TextFormField(
                     controller: mailController,
-                    cursorColor: Colors.blue[800],
+                    cursorColor: mainColor,
                     decoration: InputDecoration(
                       labelText: 'E-Mail',
                       prefixIcon: Icon(
                         Icons.mail_outline,
-                        color: Colors.blue[800],
+                        color: mainColor,
                       ),
                       border: OutlineInputBorder(
                         borderSide: BorderSide.none,
@@ -94,7 +97,7 @@ class _RegisterState extends State<Register> {
                       filled: true,
                       fillColor: Colors.white,
                       labelStyle: TextStyle(
-                        color: Colors.blue[800],
+                        color: mainColor,
                       ),
                     ),
                   ),
@@ -104,20 +107,19 @@ class _RegisterState extends State<Register> {
               Padding(
                 padding: EdgeInsets.only(left: 20.0, right: 20),
                 child: Container(
-                  height: size.height * 0.075,
+                  height: size.height * 0.065,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey, width: 0.3),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: TextFormField(
-                    obscureText: true,
                     controller: passwordController,
-                    cursorColor: Colors.blue[800],
+                    cursorColor: mainColor,
                     decoration: InputDecoration(
                       labelText: 'Şifre',
                       prefixIcon: Icon(
-                        Icons.lock_outline,
-                        color: Colors.blue[800],
+                        Icons.lock,
+                        color: mainColor,
                       ),
                       border: OutlineInputBorder(
                         borderSide: BorderSide.none,
@@ -126,7 +128,7 @@ class _RegisterState extends State<Register> {
                       filled: true,
                       fillColor: Colors.white,
                       labelStyle: TextStyle(
-                        color: Colors.blue[800],
+                        color: mainColor,
                       ),
                     ),
                   ),
@@ -136,20 +138,19 @@ class _RegisterState extends State<Register> {
               Padding(
                 padding: EdgeInsets.only(left: 20.0, right: 20),
                 child: Container(
-                  height: size.height * 0.075,
+                  height: size.height * 0.065,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey, width: 0.3),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: TextFormField(
-                    obscureText: true,
                     controller: passwordAgainController,
-                    cursorColor: Colors.blue[800],
+                    cursorColor: mainColor,
                     decoration: InputDecoration(
                       labelText: 'Şifre Tekrar',
                       prefixIcon: Icon(
-                        Icons.lock,
-                        color: Colors.blue[800],
+                        Icons.lock_outline,
+                        color: mainColor,
                       ),
                       border: OutlineInputBorder(
                         borderSide: BorderSide.none,
@@ -158,7 +159,7 @@ class _RegisterState extends State<Register> {
                       filled: true,
                       fillColor: Colors.white,
                       labelStyle: TextStyle(
-                        color: Colors.blue[800],
+                        color: mainColor,
                       ),
                     ),
                   ),
@@ -168,19 +169,19 @@ class _RegisterState extends State<Register> {
               Padding(
                 padding: EdgeInsets.only(left: 20.0, right: 20),
                 child: Container(
-                  height: size.height * 0.075,
+                  height: size.height * 0.065,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey, width: 0.3),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: TextFormField(
                     controller: nameController,
-                    cursorColor: Colors.blue[800],
+                    cursorColor: mainColor,
                     decoration: InputDecoration(
                       labelText: 'Ad',
                       prefixIcon: Icon(
                         Icons.person,
-                        color: Colors.blue[800],
+                        color: mainColor,
                       ),
                       border: OutlineInputBorder(
                         borderSide: BorderSide.none,
@@ -189,7 +190,7 @@ class _RegisterState extends State<Register> {
                       filled: true,
                       fillColor: Colors.white,
                       labelStyle: TextStyle(
-                        color: Colors.blue[800],
+                        color: mainColor,
                       ),
                     ),
                   ),
@@ -199,19 +200,19 @@ class _RegisterState extends State<Register> {
               Padding(
                 padding: EdgeInsets.only(left: 20.0, right: 20),
                 child: Container(
-                  height: size.height * 0.075,
+                  height: size.height * 0.065,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey, width: 0.3),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: TextFormField(
                     controller: surnameController,
-                    cursorColor: Colors.blue[800],
+                    cursorColor: mainColor,
                     decoration: InputDecoration(
                       labelText: 'Soyad',
                       prefixIcon: Icon(
                         Icons.person_outline_sharp,
-                        color: Colors.blue[800],
+                        color: mainColor,
                       ),
                       border: OutlineInputBorder(
                         borderSide: BorderSide.none,
@@ -220,7 +221,7 @@ class _RegisterState extends State<Register> {
                       filled: true,
                       fillColor: Colors.white,
                       labelStyle: TextStyle(
-                        color: Colors.blue[800],
+                        color: mainColor,
                       ),
                     ),
                   ),
@@ -228,26 +229,29 @@ class _RegisterState extends State<Register> {
               ),
               SizedBox(height: 30),
               Padding(
-                padding: EdgeInsets.only(left: 20.0, right: 20),
+                padding:  EdgeInsets.only(left: 20.0,right: 20),
                 child: Container(
-                  height: 50.0,
+                  height: 40.0,
                   width: size.width,
                   // ignore: deprecated_member_use
                   child: RaisedButton(
                     onPressed: () {
-                      register(
-                              mailController.text,
-                              passwordController.text,
-                              passwordAgainController.text,
-                              nameController.text,
-                              surnameController.text)
-                          .then((s) {
-                            if(s==200){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
-                            }else{
-                              d.log(s.toString());
-                            }
-                      });
+
+                      if (isClicked == false) {
+                        register(mailController.text,passwordController.text,passwordAgainController.text,nameController.text,surnameController.text).then((value) {
+                          if (value == true) {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MobileLogin()));
+                          } else {
+                            d.log(value.toString());
+                          }
+                        });
+                      } else {}
+
+                      isClicked = true;
+                      setState(() {});
                     },
                     elevation: 8,
                     shape: RoundedRectangleBorder(
@@ -256,17 +260,25 @@ class _RegisterState extends State<Register> {
                     padding: EdgeInsets.all(0.0),
                     child: Ink(
                       decoration: BoxDecoration(
-                        color: Colors.blue[800],
+                        color: mainColor,
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Container(
                         constraints: BoxConstraints(
                             maxWidth: size.width, minHeight: 50.0),
                         alignment: Alignment.center,
-                        child: Text(
+                        child: isClicked == false
+                            ? Text(
                           "Devam",
                           textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white, fontSize: 15),
+                          style: TextStyle(
+                              color: Colors.white, fontSize: 15),
+                        )
+                            : Padding(
+                          padding: EdgeInsets.all(3.0),
+                          child: CircularProgressIndicator(
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
@@ -286,11 +298,11 @@ class _RegisterState extends State<Register> {
                   GestureDetector(
                       onTap: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Login()));
+                            MaterialPageRoute(builder: (context) => MobileLogin()));
                       },
                       child: Text("Hemen Giriş Yap",
                           style: TextStyle(
-                              color: Colors.blue[800],
+                              color: mainColor,
                               fontWeight: FontWeight.bold))),
                 ],
               ),
@@ -307,7 +319,7 @@ class _RegisterState extends State<Register> {
   Future register(String mail, String password, String passAgain, String name,
       String surname) async {
     var user =
-        await authService.register(mail, password, passAgain, name, surname);
+    await authService.register(mail, password, passAgain, name, surname);
     return user;
   }
 }

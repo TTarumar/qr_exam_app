@@ -3,62 +3,51 @@ import 'dart:developer' as d;
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:string_splitter/string_splitter.dart';
-import '../const/api.dart';
+import '../const/api_const.dart';
 import '../model/user_model.dart';
 import 'auth_base.dart';
 
 class AuthService implements AuthBase {
+  UserModel userModel = UserModel();
 
   @override
-  Future<bool> login(String email, String pass) async {
+  Future login(String email, String pass) async {
     final response = await http.post(
       Uri.parse('$companyUrl/login'),
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
       },
       body: jsonEncode({'email': email, 'password': pass}),
     );
-    var newList=[];
-    d.log(response.headers["set-cookie"].toString());
 
-    var cookie = response.headers["set-cookie"].toString();
-      for(int i =0;i<= cookie.length-1;i++){
-        if(cookie[i]==";"){
-          break;
-        }else
-          newList.add(cookie[i]);
-      }
-      var newString = newList.toString().replaceAll(",", '').toString();
-      var newStringWithoutBlank = newString.replaceAll(" ", '').toString();
-      var newStringBlanket = newStringWithoutBlank.replaceAll("[", '').toString();
-      var newStringResult = newStringBlanket.replaceAll("]", '').toString();
-      loginCookie = newStringResult;
-
-
-    d.log(loginCookie);
-
+    loginCookie = response.headers["set-cookie"].split(";")[0].toString();
 
     var userJson = jsonDecode(response.body)["user"];
 
+    UserModel userModelObject = UserModel.fromMap(userJson);
+    userModel.name=userModelObject.name;
+    userModel.last_name=userModelObject.last_name;
+    userModel.email=userModelObject.email;
+    userModel.id=userModelObject.id;
+    print(userModelObject.toString()+" *********");
 
-    UserModel _userModelObject = UserModel.fromMap(userJson);
     if (response.statusCode == 200) {
-      return true;
+      return userModel;
     } else {
       d.log(userJson["message"]);
-      return false;
+      return null;
     }
   }
 
   @override
   Future<dynamic> register(
-      String email,
-      String password,
-      String passwordConfirmation,
-      String firstName,
-      String lastName,
-      ) async {
+    String email,
+    String password,
+    String passwordConfirmation,
+    String firstName,
+    String lastName,
+  ) async {
     final response = await http.post(
       Uri.parse('$companyUrl/api/usercreateapi'),
       headers: {
@@ -83,20 +72,4 @@ class AuthService implements AuthBase {
       return response.statusCode;
     }
   }
-
-/*
-  @override
-  Future<dynamic> forgotPassword(String email) async {
-    final response = await http.post(
-      Uri.parse('$companyLogin/api/forgot-password'),
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: jsonEncode({
-        'email': email,
-      }),
-    );
-    return response;
-  }*/
 }

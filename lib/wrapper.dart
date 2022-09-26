@@ -1,8 +1,10 @@
+
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
-import 'auth/login_view.dart';
-import 'auth/web_login_view.dart';
+import 'package:qr_exam_app/view/desktop/desktop_home_view.dart';
+import 'package:qr_exam_app/view/mobile/mobile_home_view.dart';
 
 
 class Wrapper extends StatefulWidget {
@@ -15,10 +17,10 @@ class Wrapper extends StatefulWidget {
 class _WrapperState extends State<Wrapper> {
   @override
   Widget build(BuildContext context) {
-    if (kIsWeb) {
-      return WebLogin();
+    if (Platform.isWindows) {
+      return DesktopHome();
     } else {
-      return Login();
+      return MobileHome();
     }
   }
 }

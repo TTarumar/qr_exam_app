@@ -1,7 +1,21 @@
-import 'package:flutter/material.dart';
-import 'package:qr_exam_app/devices/wrapper.dart';
 
-void main()  {
+import 'dart:io';
+
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:provider/provider.dart';
+import 'package:qr_exam_app/viewModel/user_view_model.dart';
+import 'package:qr_exam_app/wrapper.dart';
+
+import 'const/locator.dart';
+
+Future<void> main()  async {
+  WidgetsFlutterBinding.ensureInitialized();
+  HttpOverrides.global = MyHttpOverrides();
+
+
+// Configure injecction
+  await setupLocator();
   runApp(MyApp());
 }
 
@@ -11,12 +25,22 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: Wrapper());
+    return ChangeNotifierProvider(
+      create: (context) => UserViewModel(),
+      child: GetMaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+          ),
+          home: Wrapper()),
+    );
+  }
+}
+class MyHttpOverrides extends HttpOverrides{
+  @override
+  HttpClient createHttpClient(SecurityContext context){
+    return super.createHttpClient(context)
+      ..badCertificateCallback = (X509Certificate cert, String host, int port) => true;
   }
 }
