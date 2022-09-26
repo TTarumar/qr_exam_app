@@ -1,5 +1,5 @@
 abstract class AuthBase {
-  Future<bool> login(String email, String password); //Kullanıcı giriş
+  Future login(String email, String password); //Kullanıcı giriş
 
   Future<dynamic> register(
       String email,

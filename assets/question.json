@@ -1,1617 +1,254 @@
 [
-   {
-      "name": "Bilgisayar Ve Programlamaya Giriş",
-      "question": [
-         {
-            "id":"1",
-            "time":"20",
-            "title":"İkilik sayı sistemindeki 100011 sayısı ile 111 sayısının çarpımının sonucu ikilik sayı sistemine göre aşağıdakilerden hangisidir?",
-            "answer_options":[
-               {
-                  "value":"11100011",
-                  "marks":false
-               },
-               {
-                  "value":"11110101",
-                  "marks":true
-               },
-               {
-                  "value":"11111111",
-                  "marks":false
-               },
-              {
-                  "value":"100011111",
-                  "marks":false
-               },
-               {
-                  "value":"111100011",
-                  "marks":false
-               }
-           ]
-    
-        } 
-        ,{
-        "id":"2",
-        "time":"20",
-        "title":"Günümüzde kullanılan modern bilgisayarları da kapsayan dördüncü nesil bilgisayarlar, aşağıdaki elektronik bileşenlerden hangisinin kullanımıyla ortaya çıkmıştır?",
-         "answer_options":[
-           {
-              "value":"Monitör",
-              "marks":false
-           },
-           {
-              "value":"Transistor",
-              "marks":false
-           },
-           {
-              "value":"Vakum tüpü",
-              "marks":false
-           },
-          {
-              "value":"Mikroişlemci",
-              "marks":true
-           },
-           {
-              "value":"Tümleşik devre",
-              "marks":false
-           }
-       ]
-    },
-        {
-        "id":"3",
-        "time":"20",
-        "title":"3 Gigabyte'ın gerçek byte sayısı aşağıdakilerden hangisidir?",
-         "answer_options":[
-           {
-              "value":"3 x 230",
-              "marks":true
-           },
-           {
-              "value":"3 x 231",
-              "marks":false
-           },
-           {
-              "value":"3 x 232",
-              "marks":false
-           },
-          {
-              "value":"3 x 233",
-              "marks":false
-           },
-           {
-              "value":"3 x 234",
-              "marks":false
-           }
-       ]
-    },{
-        "id":"4",
-        "time":"20",
-        "title":"Kontrol birimi, tüm komutları bellekte bulunuş sıralarına göre işlemektedir, bu sıranın belirlenmesi için ________ adı verilen yazmaç kullanılır.Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
-         "answer_options":[
-           {
-              "value":"İşlem sayacı",
-              "marks":false
-           },
-           {
-              "value":"sıra sayacı",
-              "marks":false
-           },
-           {
-              "value":"sayaç yazmacı",
-              "marks":false
-           },
-          {
-              "value":"İşlem yazmacı",
-              "marks":false
-           },
-           {
-              "value":"program sayacı",
-              "marks":true
-           }
-       ]
-    },{
-        "id":"5",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi makine dilindeki bir komutu oluşturan ana elemanlardan biri değildir?",
-         "answer_options":[
-           {
-              "value":"İşlenen sonuç referansı",
-              "marks":false
-           },
-           {
-              "value":"İşlenen kaynak referansı",
-              "marks":false
-           },
-           {
-              "value":"İşlem kodu",
-              "marks":false
-           },
-          {
-              "value":"Sıradaki komut referansı",
-              "marks":false
-           },
-           {
-              "value":"Komut işleme yazmacı",
-              "marks":true
-           }
-       ]
-    },{
-        "id":"6",
-        "time":"20",
-        "title":"ADD, SUB, MOV gibi kısa komutları makine diline çeviren özel programlara ________ denir.Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru olarak tamamlar?",
-         "answer_options":[
-           {
-              "value":"yorumlayıcı",
-              "marks":false
-           },
-           {
-              "value":"derleyici",
-              "marks":false
-           },
-           {
-              "value":"çevirici",
-              "marks":true
-           },
-          {
-              "value":"yazıcı",
-              "marks":false
-           },
-           {
-              "value":"sonlandırıcı",
-              "marks":false
-           }
-       ]
-    }, {
-        "id":"7",
-        "time":"20",
-        "title":"Aşağıdaki deyimlerden hangisi C programlama dilinde, döngünün en az bir kez çalışması istendiğinde kullanılır?",
-         "answer_options":[
-           {
-              "value":"for",
-              "marks":false
-           },
-           {
-              "value":"while",
-              "marks":false
-           },
-           {
-              "value":"do-while",
-              "marks":true
-           },
-          {
-              "value":"switch",
-              "marks":false
-           },
-           {
-              "value":"if",
-              "marks":false
-           }
-       ]
-    },{
-          "id":"8",
-          "time":"20",
-          "title":"Bir karakter dizgisine 10 harflik bir kelime atandığında, kelimenin ilk harfi dizginin kaçıncı indisinde yer alır?",
-          "answer_options":[
-            {
-              "value":"0",
-              "marks":true
-            },
-            {
-              "value":"1",
-              "marks":false
-            },
-            {
-              "value":"3",
-              "marks":false
-            },
-            {
-              "value":"5",
-              "marks":false
-            },
-            {
-              "value":"10",
-              "marks":false
-            }
-          ]
-        },{
-          "id":"9",
-          "time":"20",
-          "title":"Kesirli sayıları temsil etmek için uygun veri tipi aşağıdakilerden hangisidir?",
-          "answer_options":[
-            {
-              "value":"float",
-              "marks":true
-            },
-            {
-              "value":"char",
-              "marks":false
-            },
-            {
-              "value":"enum",
-              "marks":false
-            },
-            {
-              "value":"long",
-              "marks":false
-            },
-            {
-              "value":"int",
-              "marks":false
-            }
-          ]
-        },{
-          "id":"10",
-          "time":"20",
-          "title":"Koşul ve yineleme deyimleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
-          "answer_options":[
-            {
-              "value":"For sözcüğünün bulunduğu satırın sonuna noktalı virgül koyulmaz.\n",
-              "marks":false
-            },
-            {
-              "value":"Switch deyimi ile istenilen sayıda karar üretmek mümkündür.\n",
-              "marks":false
-            },
-            {
-              "value":"If deyimi doğru veya yanlış olmak üzere mantıksal sonuç çıkarır.\n",
-              "marks":false
-            },
-            {
-              "value":"For deyimi yinelemeli bir deyimdir.\n",
-              "marks":false
-            },
-            {
-              "value":"if deyimi doğru değere sahip olduğu sürece döngü devam eder.\n",
-              "marks":true
-            }
-          ]
-        }
-      ]
-
-   },
-   {
-    "name": "Sistem Analizi Ve Tasarımı",
+  {
+    "name": "Matematik",
+    "id": 1,
     "question": [
       {
-        "id":"1",
-        "time":"20",
-        "title":"Çevresel faktörlerin etkisini en aza indirecek interaktif seyahat planlama sistemi geliştirmek için aşağıdaki sistem geliştirme modellerinden hangisi kullanılmalıdır?",
-        "answer_options":[
+        "id": "1",
+        "time": "20",
+        "point": 5,
+        "title": "Bir metro istasyonuna A yönünden 6 dakikada bir, B yönünden ise 8 dakikada bir metro gelmektedir. Metrolar saat 8.40’ta\naynı anda bu istasyona gelmişlerdir. Beren bu istasyona geldiğinde A ve B yönünden gelecek metroların istasyona\nulaşmalarına 5’er dakika kaldığını görüyor.",
+        "answer_options": [
           {
-            "value":"Doğrusal Ardışık Model",
-            "marks":false
+            "value": "15.35",
+            "marks": false
           },
           {
-            "value":"Spiral Model",
-            "marks":false
+            "value": "16.45",
+            "marks": false
           },
           {
-            "value":"Prototip Modeli",
-            "marks":false
+            "value": "18.35",
+            "marks": true
           },
           {
-            "value":"Artımlı Model",
-            "marks":true
-          },
-          {
-            "value":"Çevik Model",
-            "marks":false
+            "value": "19.45",
+            "marks": false
           }
         ]
-
-      }
-    ,{
-        "id":"2",
-        "time":"20",
-        "title":"PERT şemasında başlangıçtan bitişine kadar olan alternatif yollardan en uzununa ne ad verilir?",
-        "answer_options":[
+      },
+      {
+        "id": "2",
+        "time": "20",
+        "point": 5,
+        "title": "Bayanlar gülle atma branşında Rio Olimpiyatları’na katılma barajı 17,8 m’dir. Yani bir yarışmacının bu olimpiyata\nkatılması için yaptığı atışın en az 17,8 m olması gerekir.\nMilli sporcumuz Emel Dereli Rio Olimpiyatları’nda ülkemizi temsil ettiğine göre yaptığı atış aşağıdakilerden\nhangisi olabilir?",
+        "answer_options": [
           {
-            "value":"Kritik Yol",
-            "marks":true
+            "value": "√¯260m",
+            "marks": false
           },
           {
-            "value":"En Uzun Yol",
-            "marks":false
+            "value": "√¯280m",
+            "marks": false
           },
           {
-            "value":"Aşamalı Yol",
-            "marks":false
+            "value": "√¯300m",
+            "marks": false
           },
           {
-            "value":"Uzun Yol",
-            "marks":false
-          },
-          {
-            "value":"Kestirme Yol",
-            "marks":false
+            "value": "√¯325m",
+            "marks": true
           }
         ]
-      },{
-        "id":"3",
-        "time":"20",
-        "title":"Gantt şemaları ilk olarak Henry L. Gantt tarafından hangi senede tasarlanmıştır?",
-        "answer_options":[
+      },
+      {
+        "id": "3",
+        "time": "20",
+        "point": 5,
+        "title": "Yusuf mart ayına ait yaprakları tek tek koparıp rastgele yere diziyor ve içlerinden bir yaprak seçiyor. Rastgele\nseçtiği takvim yaprağının salı gününe gelen asal sayı olma olasılığı aşağıdakilerden hangisidir?\n(Mart ayı 31 gündür)",
+        "answer_options": [
           {
-            "value":"1917",
-            "marks":true
+            "value": "1/31",
+            "marks": false
           },
           {
-            "value":"1971",
-            "marks":false
+            "value": "2/31",
+            "marks": false
           },
           {
-            "value":"1871",
-            "marks":false
+            "value": "3/31",
+            "marks": true
           },
           {
-            "value":"1997",
-            "marks":false
-          },
-          {
-            "value":"1817",
-            "marks":false
+            "value": "4/31",
+            "marks": false
           }
         ]
-      },{
-        "id":"4",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi gereksinimleri belirleme süreci adımlarından biri değildir?",
-        "answer_options":[
+      },
+      {
+        "id": "4",
+        "time": "20",
+        "point": 5,
+        "title": "Bir internet sitesi, kullanıcılarından 1’den 10’a kadar bir sayı seçmelerini istemiştir. Kullanıcıların cevapları incelendiğinde; her bir sayıyı seçen kullanıcı sayısının, seçilen sayının çarpan sayısı kadar olduğu görülmüştür.\nÖrneğin\n8’i seçen kullanıcı sayısı, 8’in 4 tane çarpanı olduğundan dolayı 4’tür.\nBuna göre kullanıcılardan biri seçildiğinde, bu kişinin 4’ü seçmiş olma olasılığı kaçtır?",
+        "answer_options": [
           {
-            "value":"Problemi belirleme ve analiz",
-            "marks":false
+            "value": "1/10",
+            "marks": false
           },
           {
-            "value":"Gereksinimlerin tanımlanması",
-            "marks":false
+            "value": "1/9",
+            "marks": true
           },
           {
-            "value":"Gereksinimlerin sınıflandırılması",
-            "marks":true
+            "value": "4/27",
+            "marks": false
           },
           {
-            "value":"Gereksinimlerin analizi ve belgelendirilmesi",
-            "marks":false
-          },
-          {
-            "value":"Gereksinimlerin yönetimi",
-            "marks":false
+            "value": "4/10",
+            "marks": false
           }
         ]
-      },{
-        "id":"5",
-        "time":"20",
-        "title":"“Sistemdeki bilgilerin bakım ve güvenliğini kim sağlayacak?” sorusu kullanım durum hikâyeleri oluşturulurken hangi bilgiyi elde etmek için sorulur?",
-        "answer_options":[
+      },
+      {
+        "id": "5",
+        "time": "20",
+        "point": 5,
+        "title": "Bir karınca kendisinin 50 katı kütlesini taşıyabilmektedir. Buradan esinlenerek kendi kütlesinin 50 katını taşıyabilen bir\nrobot tasarlanmıştır.\nKütlesi √¯12 kg olan bu robot kütlesi √¯27 kg kutulardan en fazla kaç tane taşıyabilir?",
+        "answer_options": [
           {
-            "value":"Hata senaryoları",
-            "marks":false
+            "value": "35",
+            "marks": false
           },
           {
-            "value":"Alternatif senaryolar",
-            "marks":false
+            "value": "34",
+            "marks": false
           },
           {
-            "value":"Ana başarı senaryosu",
-            "marks":false
+            "value": "33",
+            "marks": true
           },
           {
-            "value":"İsim",
-            "marks":false
-          },
-          {
-            "value":"Aktörler",
-            "marks":true
-          }
-        ]
-      },{
-        "id":"6",
-        "time":"20",
-        "title":"Bir kullanım durum içindeki adımların diğer kullanım durumlarda da yer almasıyla meydana gelen ilişki aşağıdakilerden hangisidir?",
-        "answer_options":[
-          {
-            "value":"Kalıtım ilişkisi",
-            "marks":false
-          },
-          {
-            "value":"Ekleme ilişkisi",
-            "marks":true
-          },
-          {
-            "value":"Genişleme ilişkisi",
-            "marks":false
-          },
-          {
-            "value":"Bağlantı ilişkisi",
-            "marks":false
-          },
-          {
-            "value":"Birleşim ilişkisi",
-            "marks":false
-          }
-        ]
-      }, {
-        "id":"7",
-        "time":"20",
-        "title":"Varlık ilişki diyagramındaki farklı varlıklar arasında kurulan fiziksel ve mantıksal bağlantıları temsil eden öğe aşağıdakilerden hangisidir?",
-        "answer_options":[
-          {
-            "value":"İlişki",
-            "marks":true
-          },
-          {
-            "value":"Öznitelik",
-            "marks":false
-          },
-          {
-            "value":"Anahtar",
-            "marks":false
-          },
-          {
-            "value":"Varlık",
-            "marks":false
-          },
-          {
-            "value":"Diyagram",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"8",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi mantıksal veri akış diyagramlarında bulunan bilgilerden biri değildir?",
-        "answer_options":[
-          {
-            "value":"İşletmenin nasıl çalışacağı",
-            "marks":false
-          },
-          {
-            "value":"Sistemin nasıl hayata geçirileceği",
-            "marks":true
-          },
-          {
-            "value":"İş kontrolleri",
-            "marks":false
-          },
-          {
-            "value":"Kalıcı veri koleksiyonlarını temsil eden veri depoları",
-            "marks":false
-          },
-          {
-            "value":"İşletme faaliyetleri",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"9",
-        "time":"20",
-        "title":"Bir nesnenin sahip olduğu özellikleri belirten verilere ne ad verilir?",
-        "answer_options":[
-          {
-            "value":"Öznitelik",
-            "marks":true
-          },
-          {
-            "value":"Davranış",
-            "marks":false
-          },
-          {
-            "value":"Fonksiyon",
-            "marks":false
-          },
-          {
-            "value":"Kapsülleme",
-            "marks":false
-          },
-          {
-            "value":"Miras",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"10",
-        "time":"20",
-        "title":"Bir nesnenin yapabileceği şeylere ne ad verilir?",
-        "answer_options":[
-          {
-            "value":"Öznitelik",
-            "marks":false
-          },
-          {
-            "value":"Davranış",
-            "marks":true
-          },
-          {
-            "value":"Kapsülleme",
-            "marks":false
-          },
-          {
-            "value":"Miras",
-            "marks":false
-          },
-          {
-            "value":"Fonksiyon",
-            "marks":false
+            "value": "32",
+            "marks": false
           }
         ]
       }
     ]
-
   },
-   {
-    "name": "Algoritmalar ve Programlama",
+  {
+    "name": "Türkçe",
+    "id": 2,
     "question": [
       {
-        "id":"1",
-        "time":"20",
-        "title":"Belirli değerleri giriş olarak alan ve istenilen amaca uygun olarak bu değerleri bir takım işlemlerden geçirerek bir çıktı üreten işlemler bütününe ne ad verilir?",
-        "answer_options":[
+        "id": "1",
+        "time": "20",
+        "point": 5,
+        "title": "Aşağıda verilen deyimlerden hangisinin açıklaması yanlıştır?",
+        "answer_options": [
           {
-            "value":"Dizi",
-            "marks":false
+            "value": "Kuş uçurmamak → Hiçbir şeyin veya kimsenin kaçmasına, geçmesine imkân vermemek.",
+            "marks": false
           },
           {
-            "value":"işlem",
-            "marks":false
+            "value": "Kuyruğuna basmak → Birini incitip saldırıda bulunmasına yol açmak.",
+            "marks": false
           },
           {
-            "value":"Algoritma",
-            "marks":true
+            "value": "Ayağı yerden kesilmek → Aşırı korkudan dolayı fazlasıyla heyecanlanmak.",
+            "marks": true
           },
           {
-            "value":"Toplama işlemi",
-            "marks":false
-          },
-          {
-            "value":"Hesaplama",
-            "marks":false
+            "value": " Kaşla göz arasında → Kimsenin sezmesine imkân vermeyecek kadar kısa bir zaman içinde.",
+            "marks": false
           }
         ]
-
-      }
-    ,{
-        "id":"2",
-        "time":"20",
-        "title":"Bir algoritmayı görsel olarak ifade ederek daha kolay anlaşılabilmesine olanak veren algoritma gösterim yöntemi aşağıdakilerden hangisidir?",
-        "answer_options":[
+      },
+      {
+        "id": "2",
+        "time": "20",
+        "point": 5,
+        "title": "“Kapmak” sözcüğü hangi cümlede “ısırıp parçalamak” anlamında kullanılmıştır?",
+        "answer_options": [
           {
-            "value":"Konuşma dili",
-            "marks":false
+            "value": "Elimdeki kalemi birdenbire kapmasın mı? ",
+            "marks": false
           },
           {
-            "value":"Kaynak kodu",
-            "marks":false
+            "value": "Sürüden ayrılanı kurt kapar.",
+            "marks": true
           },
           {
-            "value":"Akış şeması",
-            "marks":true
+            "value": "Dinlediği bir türküyü anında kapar",
+            "marks": false
           },
           {
-            "value":"Veri yapısı",
-            "marks":false
-          },
-          {
-            "value":"Sözde kod",
-            "marks":false
+            "value": "Arka sıralardan bir sandalye kaptık",
+            "marks": false
           }
         ]
-      },{
-        "id":"3",
-        "time":"20",
-        "title":"Algoritmanın çalışma zamanının belirli bir girdi değerinden sonra bu gösterimdeki fonksiyondan daha küçük olarak çalıştığını garanti eden analiz gösterimi aşağıdakilerden hangisidir?",
-        "answer_options":[
+      },
+      {
+        "id": "3",
+        "time": "20",
+        "point": 5,
+        "title": "İlim olmadan gelişim olamaz. İlim öğrenmeye çalış ve bilgililerin bilgilisi ol. Bunun için “Beşikten mezara kadar ilim\nöğreniniz!” sözünü ilke edin.\nBu paragrafta aşağıdaki düşünceyi geliştirme yollarından hangisine başvurulmuştur? ",
+        "answer_options": [
           {
-            "value":"Büyük O Gösterimi",
-            "marks":true
+            "value": "Tanık gösterme",
+            "marks": true
           },
           {
-            "value":"Büyük O Gösterimi",
-            "marks":false
+            "value": "Örnekleme",
+            "marks": false
           },
           {
-            "value":"Büyük 0 Gösterimi",
-            "marks":false
+            "value": "Tanımlama",
+            "marks": false
           },
           {
-            "value":"Zaman Karmaşıklığı",
-            "marks":false
-          },
-          {
-            "value":"Alan Karmaşıklığı",
-            "marks":false
+            "value": "Sayısal verilerden yararlanma",
+            "marks": false
           }
         ]
-      },{
-        "id":"4",
-        "time":"20",
-        "title":"Tasarlanan algoritma ile problemin çözümüne ulaşabilmek için yapılan toplam temel operasyon sayısına ne ad verilir?",
-        "answer_options":[
+      },
+      {
+        "id": "4",
+        "time": "20",
+        "point": 5,
+        "title": "Şuna ise hiç karar veremiyorum. Bir parçalanma mı hayat (I) yoksa bütünleşme mi (II) Hayat dediğimiz çaba (III) iki ayrı\nparçayı sonuna dek iki ayrı parça hâlinde tutmaya çalışmak mı (IV) yoksa onları bütünlüğe kavuşturmak mı (V)\nBu metinde numaralanmış yerlerden hangilerine soru işareti getirilmelidir?",
+        "answer_options": [
           {
-            "value":"Yer karmaşıklığı",
-            "marks":false
+            "value": "I ve II.",
+            "marks": false
           },
           {
-            "value":"Zaman karmaşıklığı",
-            "marks":false
+            "value": "II ve III.",
+            "marks": false
           },
           {
-            "value":"Alan karmaşıklığı",
-            "marks":false
+            "value": "II ve V.",
+            "marks": true
           },
           {
-            "value":"Çalışma zamanı",
-            "marks":true
-          },
-          {
-            "value":"işlem karmaşıklığı",
-            "marks":false
+            "value": "IV ve V",
+            "marks": false
           }
         ]
-      },{
-        "id":"5",
-        "time":"20",
-        "title":"1’den 100’e kadar olan tamsayıların toplamı aşağıdakilerden hangisidir?",
-        "answer_options":[
+      },
+      {
+        "id": "5",
+        "time": "20",
+        "point": 270,
+        "title": "KCTEK Firmasında şu ana kadar yapılan en iyi staj sunumu kime aittir?",
+        "answer_options": [
           {
-            "value":"1000",
-            "marks":false
+            "value": "Batuhan Yılmaz",
+            "marks": true
           },
           {
-            "value":"5000",
-            "marks":false
+            "value": "Batuhan Yılmaz",
+            "marks": true
           },
           {
-            "value":"5050",
-            "marks":true
+            "value": "Batuhan Yılmaz",
+            "marks": true
           },
           {
-            "value":"5200",
-            "marks":false
-          },
-          {
-            "value":"5600",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"6",
-        "time":"20",
-        "title":"Özyinelemeli olmayan algoritmaların analizi yapılırken gerekli ilk adım aşağıdakilerden hangisidir?",
-        "answer_options":[
-          {
-            "value":"Temel operasyon için toplam ifadesini bulmak",
-            "marks":false
-          },
-          {
-            "value":"Algoritmanın temel operasyonunu belirlemek",
-            "marks":false
-          },
-          {
-            "value":"Problemin girdi büyüklüğünü veren parametreyi belirlemek",
-            "marks":true
-          },
-          {
-            "value":"Algoritmanın verimlilik sınıfını bulmak",
-            "marks":false
-          },
-          {
-            "value":"Temel operasyonun neye göre değiştiğini belirlemek",
-            "marks":false
-          }
-        ]
-      }, {
-        "id":"7",
-        "time":"20",
-        "title":"Elemanları [5, 12, 9, 15, 4, 3, 7, 6] olan dizi üzerinde ardışık arama yapılarak 9, 2 ve 3 sayılarının bulunup bulunmadığı kontrol edilecektir.Bu aramalar için toplam kaç karşılaştırma işlemi yapılır?",
-        "answer_options":[
-          {
-            "value":"9",
-            "marks":false
-          },
-          {
-            "value":"13",
-            "marks":false
-          },
-          {
-            "value":"15",
-            "marks":false
-          },
-          {
-            "value":"17",
-            "marks":true
-          },
-          {
-            "value":"24",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"8",
-        "time":"20",
-        "title":"________ arama, en temel arama algoritmasıdır ve bu algoritmanın çalışması için dizilerin sıralı olması gerekmez.Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
-        "answer_options":[
-          {
-            "value":"Baloncuk",
-            "marks":false
-          },
-          {
-            "value":"Ardışık",
-            "marks":true
-          },
-          {
-            "value":"Hızlı",
-            "marks":false
-          },
-          {
-            "value":"ikili",
-            "marks":false
-          },
-          {
-            "value":"Seçmeli",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"9",
-        "time":"20",
-        "title":"Elemanları [3, 12, 29, 35, 42, 60, 72] olan ve elemanlarının konumları 1 ile 7 arasında değişen dizi üzerinde ikili arama yapılarak 60 sayısı aranacaktır.Bu arama yapılırken 2 karşılaştırma adımında ilk, orta ve son elemanların konum bilgileri ne olur?",
-        "answer_options":[
-          {
-            "value":"ilk 1, Orta 4, Son",
-            "marks":false
-          },
-          {
-            "value":"ilk 2, Orta 4, Son",
-            "marks":false
-          },
-          {
-            "value":"ilk 3, Orta 5, Son",
-            "marks":false
-          },
-          {
-            "value":"ilk 4, Orta 5, Son",
-            "marks":false
-          },
-          {
-            "value":"ilk 5, Orta 6, Son",
-            "marks":true
-          }
-        ]
-      },{
-        "id":"10",
-        "time":"20",
-        "title":"Elemanları [8, 5, 17, 4] olan bir dizi, baloncuk sıralaması algoritması ile küçükten büyüğe doğru sıralanmak istenildiğinde, algoritmanın adımları sonrasında elde edilecek diziler aşağıdakilerden hangisinde doğru sırayla verilmiştir?",
-        "answer_options":[
-          {
-            "value":"[4, 5, 8, 17], [4, 5, 8, 17], [4, 5, 8, 17]",
-            "marks":false
-          },
-          {
-            "value":"[5, 4, 17, 8], [4, 5, 8, 17], [4, 5, 8, 17]",
-            "marks":false
-          },
-          {
-            "value":"[5, 4, 17, 8], [5, 4, 8, 17], [4, 5, 8, 17]",
-            "marks":false
-          },
-          {
-            "value":"[5, 8, 4, 17], [4, 5, 8, 17], [4, 5, 8, 17]",
-            "marks":false
-          },
-          {
-            "value":"[5, 8, 4, 17], [5, 4, 8, 17], [4, 5, 8, 17]",
-            "marks":true
+            "value": "Bilemedim",
+            "marks": false
           }
         ]
       }
     ]
-
-  },
-   {
-    "name": "Temel Bilgi Teknolojileri",
-    "question": [
-      {
-        "id":"1",
-        "time":"20",
-        "title":"Bilgisayarlarda verinin çoğunun işlendiği donanıma ne ad verilir?",
-        "answer_options":[
-          {
-            "value":"İşlemci",
-            "marks":true
-          },
-          {
-            "value":"BIOS",
-            "marks":false
-          },
-          {
-            "value":"ROM",
-            "marks":false
-          },
-          {
-            "value":"RAM",
-            "marks":false
-          },
-          {
-            "value":"Sabit disk",
-            "marks":false
-          }
-        ]
-
-      }
-    ,{
-        "id":"2",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi belgede seçili bir metin parçası üzerinde yapılabilecek değişikliklerden biri değildir?",
-        "answer_options":[
-          {
-            "value":"Vurgu",
-            "marks":false
-          },
-          {
-            "value":"Zemin rengi",
-            "marks":false
-          },
-          {
-            "value":"Filigran",
-            "marks":true
-          },
-          {
-            "value":"Kenarlık",
-            "marks":false
-          },
-          {
-            "value":"Yazı stili",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"3",
-        "time":"20",
-        "title":"PowerPoint programında sunum hazırlarken metin, grafik, ses ve video gibi verilerin ekleneceği alan aşağıdakilerden hangisidir?",
-        "answer_options":[
-          {
-            "value":"Sekmeler sütunu",
-            "marks":false
-          },
-          {
-            "value":"Bildiri bölümü",
-            "marks":false
-          },
-          {
-            "value":"Slayt ekranı",
-            "marks":true
-          },
-          {
-            "value":"Ofis sekmesi",
-            "marks":false
-          },
-          {
-            "value":"Not bölmesi",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"4",
-        "time":"20",
-        "title":"Veri serileri arasındaki ilişkinin gösterilmesi için kullanılacak grafik aşağıdakilerden hangisidir?",
-        "answer_options":[
-          {
-            "value":"Çekinim",
-            "marks":false
-          },
-          {
-            "value":"Dağılım",
-            "marks":true
-          },
-          {
-            "value":"Salınım",
-            "marks":false
-          },
-          {
-            "value":"Yayınım",
-            "marks":false
-          },
-          {
-            "value":"Kurulum",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"5",
-        "time":"20",
-        "title":"Google ya da Bing arama motorunda bilinmeyen bir kelime için yer tutucu olarak hangi işaretin kullanılması doğru olur?",
-        "answer_options":[
-          {
-            "value":"Yıldız",
-            "marks":true
-          },
-          {
-            "value":"Parantez",
-            "marks":false
-          },
-          {
-            "value":"Ünlem",
-            "marks":false
-          },
-          {
-            "value":"Eksi",
-            "marks":false
-          },
-          {
-            "value":"Eşittir",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"6",
-        "time":"20",
-        "title":"Https ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
-        "answer_options":[
-          {
-            "value":"Sunucu bilgisayara ulaşım yoktur.",
-            "marks":false
-          },
-          {
-            "value":"Güvenli ağ protokolü desteği sunar.",
-            "marks":true
-          },
-          {
-            "value":"Standart kullanıcı bilgisayarıdır.",
-            "marks":false
-          },
-          {
-            "value":"ilkel bir arama motorudur.",
-            "marks":false
-          },
-          {
-            "value":"Sadece Metin verileri transfer edilir.",
-            "marks":false
-          }
-        ]
-      }, {
-        "id":"7",
-        "time":"20",
-        "title":"URL'nin açılımı aşağıdakilerden hangisidir?",
-        "answer_options":[
-          {
-            "value":"Dizüstü Bilgisayar Donanımı",
-            "marks":false
-          },
-          {
-            "value":"Gelişmiş Metin Dili",
-            "marks":false
-          },
-          {
-            "value":"Standart Ağ Engelleyici",
-            "marks":false
-          },
-          {
-            "value":"E-posta Servis Sağlayıcısı",
-            "marks":false
-          },
-          {
-            "value":"Standart Kaynak Bulucu",
-            "marks":true
-          }
-        ]
-      },{
-        "id":"8",
-        "time":"20",
-        "title":"Microsoft şirketinin kullanıma sunduğu Office 365 ve Outlook gibi hizmetleri de bulunan arama motoru aşağıdakilerden hangisidir?",
-        "answer_options":[
-          {
-            "value":"Bing",
-            "marks":true
-          },
-          {
-            "value":"Google",
-            "marks":false
-          },
-          {
-            "value":"Safari",
-            "marks":false
-          },
-          {
-            "value":"Yahoo",
-            "marks":false
-          },
-          {
-            "value":"Yandex",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"9",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi kullanıcıların verilerine ve programlarına dünyanın herhangi bir yerinden, herhangi bir bilgisayarla erişmesine olanak sağlayan teknolojidir?",
-        "answer_options":[
-          {
-            "value":"Akıl teknolojisi",
-            "marks":false
-          },
-          {
-            "value":"Kapsama teknolojisi",
-            "marks":false
-          },
-          {
-            "value":"Saklama teknolojisi",
-            "marks":false
-          },
-          {
-            "value":"Bulut teknolojisi",
-            "marks":true
-          },
-          {
-            "value":"Yakınsama teknolojisi",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"10",
-        "time":"20",
-        "title":"Giyilebilir teknolojileri anlatan en temel özellik aşağıdakilerden hangisidir?",
-        "answer_options":[
-          {
-            "value":"Küçük boyutlarda üretilme",
-            "marks":false
-          },
-          {
-            "value":"Ses unsurunu etkili kullanabilme",
-            "marks":false
-          },
-          {
-            "value":"Kişisel verileri takip edebilme",
-            "marks":false
-          },
-          {
-            "value":"Giyilebilir ve taşınabilir olma",
-            "marks":true
-          },
-          {
-            "value":"Ekran çözünürlüğünün yüksekliği",
-            "marks":false
-          }
-        ]
-      }
-    ]
-
-  },
-   {
-    "name": "Ağ Yönetimi Ve Bilgi Güvenliği",
-    "question": [
-      {
-        "id":"1",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi ISO 27000 Bilgi Güvenliği Yönetim Sistemi'nin 2013 yılında güncellenerek revize edilen sürümünün getirdiği önemli yeniliklerden birisi değildir?",
-        "answer_options":[
-          {
-            "value":"Bilgi güvenliği politikasına uyumlu olması",
-            "marks":false
-          },
-          {
-            "value":"Kurum içinde yaygınlaştırılmış olması",
-            "marks":false
-          },
-          {
-            "value":"Bilgi güvenliği gereksinimlerini dikkate alması",
-            "marks":false
-          },
-          {
-            "value":"Risk değerlendirme sonuçlarını göz önünde bulundurması",
-            "marks":false
-          },
-          {
-            "value":"Güncellemeye ihtiyaç duymaması",
-            "marks":true
-          }
-        ]
-
-      }
-    ,{
-        "id":"2",
-        "time":"20",
-        "title":"Sistem ve bilgi güvenliği önlemlerini aşmak için bir güvenlik açığından yararlanıp sisteme akıllı bir izinsiz grime tanımı aşağıdakilerden hangisini ifade etmektedir?",
-        "answer_options":[
-          {
-            "value":"Güvenlik açığı",
-            "marks":false
-          },
-          {
-            "value":"Tehdit",
-            "marks":false
-          },
-          {
-            "value":"Risk",
-            "marks":false
-          },
-          {
-            "value":"Saldırgan",
-            "marks":false
-          },
-          {
-            "value":"Saldırı",
-            "marks":true
-          }
-        ]
-      },{
-        "id":"3",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi tehdit sınıflarının üçünü birden kapsama özelliğine sahiptir?",
-        "answer_options":[
-          {
-            "value":"Araya girme",
-            "marks":false
-          },
-          {
-            "value":"Telekulak",
-            "marks":false
-          },
-          {
-            "value":"Modifikasyon",
-            "marks":true
-          },
-          {
-            "value":"Sahtecilik",
-            "marks":false
-          },
-          {
-            "value":"Başkası gibi görünmek",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"4",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi simetrik şifreleme algoritmalarının temel ögelerinden biri değildir?",
-        "answer_options":[
-          {
-            "value":"Açık Metin",
-            "marks":false
-          },
-          {
-            "value":"Açık Anahtar",
-            "marks":true
-          },
-          {
-            "value":"Gizli Anahtar",
-            "marks":false
-          },
-          {
-            "value":"Şifrelenmiş Metin",
-            "marks":false
-          },
-          {
-            "value":"Şifreleme Fonksiyonu",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"5",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi SSL oturumunun durumunu tanımlamak için gerekli parametrelerden biri değildir?",
-        "answer_options":[
-          {
-            "value":"Veri sıkıştırma Metodu",
-            "marks":false
-          },
-          {
-            "value":"Rastgele Sayı",
-            "marks":false
-          },
-          {
-            "value":"Başlatma vektörleri",
-            "marks":false
-          },
-          {
-            "value":"Sıra numaraları",
-            "marks":false
-          },
-          {
-            "value":"Açık anahtar",
-            "marks":true
-          }
-        ]
-      },{
-        "id":"6",
-        "time":"20",
-        "title":"Ağ bağlantısını kullanacak programı ifade eden OSI katmanı aşağıdakilerden hangisidir?",
-        "answer_options":[
-          {
-            "value":"Fiziksel",
-            "marks":false
-          },
-          {
-            "value":"Veri bağlantısı",
-            "marks":false
-          },
-          {
-            "value":"Ağ",
-            "marks":false
-          },
-          {
-            "value":"İletim",
-            "marks":false
-          },
-          {
-            "value":"Uygulama",
-            "marks":true
-          }
-        ]
-      }, {
-        "id":"7",
-        "time":"20",
-        "title":"Aşağıdaki bilgilerden hangisi sertifikaların özelliklerinden biri değildir?",
-        "answer_options":[
-          {
-            "value":"Bir varlığın kimliği, dijital imzası kullanılarak doğrulanabilir.",
-            "marks":false
-          },
-          {
-            "value":"Sertifikaların yönetimi güvenilir üçüncü partiler tarafından yapılır.",
-            "marks":false
-          },
-          {
-            "value":"Bir açık anahtarı, bir kişi, uygulama veya servis ile ilişkilendirmek için kullanılan bir dijital dokümandır.",
-            "marks":false
-          },
-          {
-            "value":"Güvenilir birinci şahıslara sertifika otoritesi denir.",
-            "marks":true
-          },
-          {
-            "value":"Dijital imza, sertifika sahibinin gizli anahtarı kullanılarak açık anahtarının ve kim\u00ADliğinin şifrelenmesi ile elde edilir.",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"8",
-        "time":"20",
-        "title":"Aşağıdakilerin hangisi açık anahtar altyapısı (PKI)’nın temel işlevlerinden birisi değildir?",
-        "answer_options":[
-          {
-            "value":"Sertifika yayımlamak",
-            "marks":false
-          },
-          {
-            "value":"Sertifika problemlerini çözmek",
-            "marks":true
-          },
-          {
-            "value":"Sertifika iptal listelerini oluşturmak",
-            "marks":false
-          },
-          {
-            "value":"Anahtar yaşam döngüsünü yönetmek",
-            "marks":false
-          },
-          {
-            "value":"Sertifika iptal listelerini erişime açmak",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"9",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi E-posta trafiğindeki başlıca kötü niyetli kullanıcılardan değildir?",
-        "answer_options":[
-          {
-            "value":"Spam e-posta üreticileri",
-            "marks":false
-          },
-          {
-            "value":"Dolandırıcılar",
-            "marks":false
-          },
-          {
-            "value":"Bilgisayar Solucanları",
-            "marks":false
-          },
-          {
-            "value":"Oltacılar",
-            "marks":false
-          },
-          {
-            "value":"Dosya sistemi virüsleri",
-            "marks":true
-          }
-        ]
-      },{
-        "id":"10",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi bir güvenlik servisi değildir?",
-        "answer_options":[
-          {
-            "value":"İnkâr edememe",
-            "marks":false
-          },
-          {
-            "value":"Erişim kontrolü",
-            "marks":false
-          },
-          {
-            "value":"Fiziksel güvenlik",
-            "marks":false
-          },
-          {
-            "value":"Denetim",
-            "marks":false
-          },
-          {
-            "value":"Doğruluk",
-            "marks":true
-          }
-        ]
-      }
-    ]
-
-  },
-   {
-    "name": "Veritabanı Programlama",
-    "question": [
-      {
-        "id":"1",
-        "time":"20",
-        "title":"Hedeflenen çıktıları üretmek üzere belirlenebilecek algoritmaların kodlanabildiği; değişken tanımlama, akış kontrolü, döngüler gibi özellikleri bulunan dil aşağıdakilerden hangisinde doğru olarak verilmiştir?",
-        "answer_options":[
-          {
-            "value":"Yordamsal Dil",
-            "marks":true
-          },
-          {
-            "value":"Veritabanı Dili",
-            "marks":false
-          },
-          {
-            "value":"Derleyici Dili",
-            "marks":false
-          },
-          {
-            "value":"Makine Dili",
-            "marks":false
-          },
-          {
-            "value":"Nesne Tabanlı Dil",
-            "marks":false
-          }
-        ]
-
-      }
-    ,{
-        "id":"2",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi tanımlanabilir veri bütünlüğünü sağlamak için kullanılan kısıtlayıcılardan biri değildir?",
-        "answer_options":[
-          {
-            "value":"Birincil anahtar",
-            "marks":false
-          },
-          {
-            "value":"Tekil alan",
-            "marks":false
-          },
-          {
-            "value":"Yabancı anahtar",
-            "marks":false
-          },
-          {
-            "value":"Güncelleme",
-            "marks":true
-          },
-          {
-            "value":"Kontrol",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"3",
-        "time":"20",
-        "title":"“Veritabanı içerisindeki tabloda belirli olaylar meydana geldiği zaman çalışan özel saklı yordamlardır.” Yukarıdaki tanım aşağıdakilerden hangisine aittir?",
-        "answer_options":[
-          {
-            "value":"Tetikleyiciler",
-            "marks":true
-          },
-          {
-            "value":"Kısıtlayıcılar",
-            "marks":false
-          },
-          {
-            "value":"Tanımlayıcılar",
-            "marks":false
-          },
-          {
-            "value":"Kontrolcüler",
-            "marks":false
-          },
-          {
-            "value":"Kuralcılar",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"4",
-        "time":"20",
-        "title":"Aşağıdakilerden hangi komut ile Sql kodu içerisinde kullanıcıya bir hata verilmesi sağlanır?",
-        "answer_options":[
-          {
-            "value":"ROLLBACKERROR",
-            "marks":false
-          },
-          {
-            "value":"RUNTIMERROR",
-            "marks":false
-          },
-          {
-            "value":"RAISERROR",
-            "marks":true
-          },
-          {
-            "value":"USERROR",
-            "marks":false
-          },
-          {
-            "value":"TRANSACTIONERROR",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"5",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi T-SQL ile bir hata bloğu yakalanırken hatanın durum numarasını döndürür?",
-        "answer_options":[
-          {
-            "value":"ERROR_NUMBER()",
-            "marks":false
-          },
-          {
-            "value":"ERROR_SEVERITY()",
-            "marks":false
-          },
-          {
-            "value":"ERROR_STATE()",
-            "marks":true
-          },
-          {
-            "value":"ERROR_PROCEDURE()",
-            "marks":false
-          },
-          {
-            "value":"ERROR_LINE()",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"6",
-        "time":"20",
-        "title":"Aşağıdakilerden hangisi kümele fonsiyonu işlevidir?",
-        "answer_options":[
-          {
-            "value":"Sunucunun mevcut yapılandırılması hakkında bilgi veren; @@Servername (sunucu adı), @@version (SQL sunucu sürümü) vb. fonksiyonlardır.",
-            "marks":false
-          },
-          {
-            "value":"İmleçler ile ilgili veri döndüren fonksiyonlardır.",
-            "marks":false
-          },
-          {
-            "value":"Tarih ve zaman üzerinde işlemler yapan ve karakter, nümerik değer veya tarih bilgisi döndüren; Getdate (tarih al), Month (ay) vb. Fonksiyonlardır",
-            "marks":false
-          },
-          {
-            "value":"Belli bir veri kümesinde işlem yapıp tek değer döndüren; Avg (ortalama alır), Count (veri kümesi satır sayısını döndürür) vb. fonksiyonlardır.",
-            "marks":true
-          },
-          {
-            "value":"Dizgiler üzerinde işlemler yapan; Len (dizgi uzunluğu), Reverse (dizgiyi tersine çeviren) vb. fonksiyonlardır.",
-            "marks":false
-          }
-        ]
-      }, {
-        "id":"7",
-        "time":"20",
-        "title":"Saklı yordamlarda bulunan fonksiyonlarda olmayan aşağıdakilerin hangisinde bulunmaktadır?",
-        "answer_options":[
-          {
-            "value":"Saklı yordamlarda veri işleme (INSERT/UPDATE/DELETE) komutları çalıştırılabilirken kullanıcı fonksiyonlarında bu işlemler yapılamaz.",
-            "marks":true
-          },
-          {
-            "value":"Fonksiyonlarda TRY CATCH yapısı ile hata ayıklama opsiyonu varken, Saklı yordam içinde bu opsiyon yoktur.",
-            "marks":false
-          },
-          {
-            "value":"Fonksiyonların içinde hareket yönetimi varken, Saklı yordam içinde bu mümkün değildir.",
-            "marks":false
-          },
-          {
-            "value":"Fonksiyonlarda derlenmiş olarak veritabanında tutulurken, saklı yordamlar çalışma zamanında derlenir ve çalıştırılır.",
-            "marks":false
-          },
-          {
-            "value":"Kullanıcı tanımlı fonksiyon mutlaka bir tablo veya sayılı değer döndürmelidir. Döndürdüğü tablo değeri, diğer tablolar ile JOIN vb. işlemler yapmak için kullanılabilir. Fonksiyonlarda mutlaka değer döndürmeleri gerekmez.",
-            "marks":false
-          }
-        ]
-      },{
-        "id":"8",
-        "time":"20",
-        "title":"Bir veri tabanında veri girmek, değiştirmek, silmek ve verileri almak için kullanılan komutların tümü aşağıdakilerden hangisiyle isimlendirilmektedir?",
-        "answer_options":[
-          {
-            "value":"Veri Okuma Dili",
-            "marks":false
-          },
-          {
-            "value":"Veri Tanımlama Dili",
-            "marks":false
-          },
-          {
-            "value":"Veri Kontrol Dili",
-            "marks":false
-          },
-          {
-            "value":"Veri Yorumlama Dili",
-            "marks":false
-          },
-          {
-            "value":"Veri İşleme Dili",
-            "marks":true
-          }
-        ]
-      },{
-        "id":"9",
-        "time":"20",
-        "title":"Tablolarda “Tekil Alan Kısıtlayıcısı” aşağıdakilerden hangisinde doğru tanımlanmıştır?",
-        "answer_options":[
-          {
-            "value":"CONSTRAINT Tak_Bolumler_Bolum_No PRIMARY (Bolum_No)",
-            "marks":false
-          },
-          {
-            "value":"CONSTRAINT Tak_Bolumler_Bolum_No PRIMARY KEY (Bolum_No)",
-            "marks":false
-          },
-          {
-            "value":"CONSTRAINT Tak_Bolumler_Bolum_No CHECK (Bolum_No)",
-            "marks":false
-          },
-          {
-            "value":"CONSTRAINT Tak_Bolumler_Bolum_No REFERENCES (Bolum_No)",
-            "marks":false
-          },
-          {
-            "value":"CONSTRAINT Tak_Bolumler_Bolum_No UNIQUE (Bolum_No)",
-            "marks":true
-          }
-        ]
-      },{
-        "id":"10",
-        "time":"20",
-        "title":"Bilişim veritabanını oluşturmak için komut satırına aşağıdakilerden hangi komut yazılması gerekir?",
-        "answer_options":[
-          {
-            "value":"DELETE DATABASE Bilisim",
-            "marks":false
-          },
-          {
-            "value":"DROP DATABASE Bilisim",
-            "marks":false
-          },
-          {
-            "value":"SELECT DATABASE Bilisim",
-            "marks":false
-          },
-          {
-            "value":"CREATE DATABASE Bilisim",
-            "marks":true
-          },
-          {
-            "value":"INSERT DATABASE Bilisim",
-            "marks":false
-          }
-        ]
-      }
-    ]
-
   }
 ]
