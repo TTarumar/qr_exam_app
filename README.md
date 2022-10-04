@@ -33,11 +33,13 @@
 
 ## **Projede Kullanılan Araçlar**
 
-##### Flutter & Android Studio - VsCode
+#### Flutter & Android Studio - VsCode
+##### Flutter kurulumu için -> https://docs.flutter.dev/get-started/install
+##### Android Studio kurulumu için -> https://developer.android.com/studio?authuser=1
+##### Vs Code kurulumu için -> https://code.visualstudio.com/
 
 
-
-Mobil Uygulama Çıktısı İçin Adımlar:
+## **Mobil Uygulama Çıktısı İçin Adımlar**
 
 1- flutter build appbundle (Güncelleme İçin)
 2- flutter build apk --split-per-abi (Apk İçin)
