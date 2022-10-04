@@ -225,6 +225,7 @@ class _ScanState extends State<Scan> {
                 child: TextFormField(
                   controller: codeController,
                   cursorColor: mainColor,
+                  keyboardType: TextInputType.number,
                   textAlign: TextAlign.right,
                   decoration: InputDecoration(
                     labelText: 'Kod',
@@ -250,18 +251,25 @@ class _ScanState extends State<Scan> {
               InkWell(
                 onTap: () {
                   print("bastı");
-                  getCourseQuestion(43
-                          /*int.parse(
-                      codeController.text.replaceAll("qlk", ""),
-                    ),*/
-                          )
-                      .then(
+                  getCourseQuestion(
+                    int.parse(
+                      codeController.text
+                          .substring(codeController.text.length - 2),
+                    ),
+                  ).then(
                     (subjects) {
-                      print(subjects);
-                       Navigator.push(
+                      print(codeController.text
+                          .substring(codeController.text.length - 2));
+                      Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => MobileQuestion(subjects,userViewModel.userModel.email,userViewModel.userModel.name,userViewModel.userModel.last_name,userViewModel.userModel.id,""),
+                          builder: (context) => MobileQuestion(
+                              subjects,
+                              userViewModel.userModel.email,
+                              userViewModel.userModel.name,
+                              userViewModel.userModel.last_name,
+                              userViewModel.userModel.id,
+                              ""),
                         ),
                       );
                     },

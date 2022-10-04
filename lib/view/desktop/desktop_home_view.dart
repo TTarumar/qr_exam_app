@@ -65,10 +65,11 @@ class _DesktopHomeState extends State<DesktopHome> {
                     },
                     child: Container(
                       height: size.width * 0.026,
-                      width: size.width * 0.09,
+                      width: size.width * 0.2,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.transparent,
+                        border: Border.all(color: mainColor),
                       ),
                       child: Center(
                         child: Text(
@@ -97,7 +98,7 @@ class _DesktopHomeState extends State<DesktopHome> {
                     },
                     child: Container(
                       height: size.width * 0.026,
-                      width: size.width * 0.09,
+                      width: size.width * 0.2,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: mainColor,
@@ -152,7 +153,7 @@ class _DesktopHomeState extends State<DesktopHome> {
                     height: size.width * 0.02,
                   ),
                   Text(
-                    "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+                    "Onlarca ders, yüzlerce soru ile sınıf arkadaşlarınla eğlenerek seviyeni belirlemeye hazır mısın? qrExam senin için rekabetçi bir ortam oluşturarak eğlenerek öğrenmeni sağlar. Hadi! Hemen başlayalım.",
                     style: TextStyle(
                         color: Colors.black45,
                         fontSize: size.width * 0.012,
@@ -160,6 +161,15 @@ class _DesktopHomeState extends State<DesktopHome> {
                   ),
                   SizedBox(
                     height: size.width * 0.08,
+                  ),
+                  Positioned(
+                    right: 30,
+                    bottom: 0,
+                    child: SvgPicture.asset(
+                      "assets/teacher.svg",
+                      height: size.width * 0.32,
+                      width: size.width * 0.3,
+                    ),
                   ),
                   /*Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

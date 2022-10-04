@@ -1,7 +1,6 @@
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/devices/web/home_page.dart';
 import 'package:qr_exam_app/services/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'dart:developer' as d;
@@ -22,7 +21,13 @@ class _DesktopLoginState extends State<DesktopLogin> {
   TextEditingController mailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   UserViewModel userViewModel;
+  bool isClicked=false;
 
+  @override
+  void dispose() {
+    isClicked=false;
+    super.dispose();
+  }
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -33,7 +38,7 @@ class _DesktopLoginState extends State<DesktopLogin> {
       appBar: AppBar(
         actions: [
           Padding(
-            padding:  EdgeInsets.only(right:20.0),
+            padding: EdgeInsets.only(right: 20.0),
             child: Row(
               children: [
                 Text(
@@ -55,10 +60,10 @@ class _DesktopLoginState extends State<DesktopLogin> {
           ),
         ],
         leading: SizedBox(
-          height: size.width*0.02,
-          width: size.width*0.02,
+          height: size.width * 0.02,
+          width: size.width * 0.02,
           child: IconButton(
-            onPressed: (){
+            onPressed: () {
               Navigator.pop(context);
             },
             hoverColor: Colors.grey[100],
@@ -77,7 +82,9 @@ class _DesktopLoginState extends State<DesktopLogin> {
               physics: BouncingScrollPhysics(),
               child: Padding(
                 padding: EdgeInsets.only(
-                    right: size.width * 0.35, left: size.width * 0.35,top: size.width*0.04),
+                    right: size.width * 0.35,
+                    left: size.width * 0.35,
+                    top: size.width * 0.04),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -95,14 +102,14 @@ class _DesktopLoginState extends State<DesktopLogin> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text(
-                            "Hoşgeldiniz",
+                            "qrExam",
                             style: TextStyle(
                                 color: Colors.black87,
                                 fontSize: size.width * 0.03,
                                 fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            "Yarışmalar ile kendini geliştirmeye hazır mısın?",
+                            "Karekodlu sınıf sınav uygulaması",
                             style: TextStyle(
                               color: Colors.black45,
                             ),
@@ -168,15 +175,6 @@ class _DesktopLoginState extends State<DesktopLogin> {
                       ),
                     ),
                     SizedBox(height: size.width * 0.01),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: GestureDetector(
-                        child: Text(
-                          "Şifremi Unuttum",
-                          style: TextStyle(color: Colors.grey),
-                        ),
-                      ),
-                    ),
                     SizedBox(height: 30),
                     Container(
                       height: 40.0,
@@ -184,16 +182,25 @@ class _DesktopLoginState extends State<DesktopLogin> {
                       // ignore: deprecated_member_use
                       child: RaisedButton(
                         onPressed: () {
-                          login("ogrenci1@qulak.com", "123456Kc").then((value) {
-                            if (value !=null) {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => DesktopCourses()));
-                            } else {
-                              d.log(value.toString());
-                            }
-                          });
+                          if(isClicked==false){
+                            login("ogrenci1@qulak.com", "123456Kc")
+                                .then((value) {
+                              if (value != null) {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            DesktopCourses()));
+                              } else {
+                                d.log(value.toString());
+                              }
+                            });
+                          }else{
+
+                          }
+                          isClicked=true;
+                          setState(() {});
+
                         },
                         elevation: 8,
                         shape: RoundedRectangleBorder(
@@ -209,11 +216,19 @@ class _DesktopLoginState extends State<DesktopLogin> {
                             constraints: BoxConstraints(
                                 maxWidth: size.width, minHeight: 50.0),
                             alignment: Alignment.center,
-                            child: Text(
-                              "Devam",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.white, fontSize: 15),
-                            ),
+                            child: isClicked == false
+                                ? Text(
+                                    "Giriş Yap",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 15),
+                                  )
+                                : Padding(
+                                    padding: EdgeInsets.all(3.0),
+                                    child: CircularProgressIndicator(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                           ),
                         ),
                       ),

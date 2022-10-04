@@ -1,6 +1,5 @@
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/devices/phone/home_page.dart';
 import 'package:qr_exam_app/services/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'dart:developer' as d;

@@ -32,7 +32,7 @@ class _GroupScreenState extends State<GroupScreen> {
   int point = 0;
   List leadBoard = [];
   var channel = WebSocketChannel.connect(
-    Uri.parse('ws://10.14.1.50:8080'),
+    Uri.parse('ws://10.14.1.81:8080'),
   );
   TextEditingController roomNameController = TextEditingController();
   TextEditingController userCountController = TextEditingController();
@@ -252,7 +252,7 @@ class _GroupScreenState extends State<GroupScreen> {
               InkWell(
                 onTap: () {
                   var channel = WebSocketChannel.connect(
-                    Uri.parse('ws://10.14.1.50:8080'),
+                    Uri.parse('ws://10.14.1.81:8080'),
                   );
                   Map<String, dynamic> map = {
                     "type": "init",
