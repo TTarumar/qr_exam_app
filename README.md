@@ -41,29 +41,29 @@
 
 
 ## **Projede Kullanılan Flutter Paketleri**
-  cupertino_icons: ^1.0.2
-  circular_countdown_timer: ^0.2.2
-  hexcolor: ^2.0.7
-  responsive_builder: ^0.4.2
-  mobile_scanner: ^2.0.0
-  http: ^0.13.5
-  qr_flutter: ^4.0.0
-  string_splitter: ^1.0.0+1
-  page_transition: ^2.0.9
-  transparent_image: ^2.0.0
-  slide_countdown: ^0.3.2
-  flutter_barcode_scanner: ^1.0.2
-  step_progress_indicator: ^1.0.2
-  web_socket_channel: ^2.2.0
-  shimmer: ^2.0.0
-  flutter_svg: ^1.1.5
-  flutter_widget_from_html: ^0.8.5
-  lottie: ^1.4.2
-  get: ^4.6.5
-  get_it: ^7.2.0
-  fluttertckimliknvigovtr: ^0.1.0
-  provider: ^5.0.0
-  html: ^0.15.0
+  ##### cupertino_icons: ^1.0.2
+  ##### circular_countdown_timer: ^0.2.2
+  ##### hexcolor: ^2.0.7
+  ##### responsive_builder: ^0.4.2
+  ##### mobile_scanner: ^2.0.0
+  ##### http: ^0.13.5
+  ##### qr_flutter: ^4.0.0
+  ##### string_splitter: ^1.0.0+1
+  ##### page_transition: ^2.0.9
+  ##### transparent_image: ^2.0.0
+  ##### slide_countdown: ^0.3.2
+  ##### flutter_barcode_scanner: ^1.0.2
+  ##### step_progress_indicator: ^1.0.2
+  ##### web_socket_channel: ^2.2.0
+  ##### shimmer: ^2.0.0
+  ##### flutter_svg: ^1.1.5
+  ##### flutter_widget_from_html: ^0.8.5
+  ##### lottie: ^1.4.2
+  ##### get: ^4.6.5
+  ##### get_it: ^7.2.0
+  ##### fluttertckimliknvigovtr: ^0.1.0
+  ##### provider: ^5.0.0
+  ##### html: ^0.15.0
 
 ## **Mobil Uygulama Çıktısı İçin Adımlar**
 
