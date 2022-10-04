@@ -6,8 +6,9 @@
 ##### Sınıf ortamında çalışması planlanan akıllı tahta sınıf sınav uygulaması öğretmenin akıllı tahtadan sınavını yapmak istediği dersin karekodunu açması ile başlar. Akıllı tahtadaki karekodu mobil uygulama üzerinden okutan öğrenciler sınava giriş yapar ve soruları cevaplar. Sorularını tamamlayan öğrenciler sınavın sonlanması ile liderlik tablosundan veya mobil uygulamadan sınav puanını görebilir.
 
 
+## **Proje Ekran Görüntüleri**
 
-
+![sss](https://user-images.githubusercontent.com/47665779/193897983-d86e24e6-23db-4bc5-9145-cb9ae7c5a65f.png)
 
 
 
