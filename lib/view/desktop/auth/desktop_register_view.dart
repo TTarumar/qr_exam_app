@@ -1,25 +1,8 @@
 import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/const/colors.dart';
-import 'package:qr_exam_app/devices/phone/home_page.dart';
 import 'package:qr_exam_app/services/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_exam_app/view/desktop/auth/desktop_login_view.dart';
+import 'package:qr_exam_app/view/desktop/desktop_home_view.dart';
 import 'dart:developer' as d;
 
 import 'package:qr_exam_app/view/mobile/auth/mobile_login_view.dart';
@@ -262,7 +245,7 @@ class _DesktopRegisterState extends State<DesktopRegister> {
                           surnameController.text)
                           .then((s) {
                         if(s==200){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>DesktopHome()));
                         }else{
                           d.log(s.toString());
                         }

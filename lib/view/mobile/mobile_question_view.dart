@@ -48,12 +48,12 @@ class _MobileQuestionState extends State<MobileQuestion> {
   List<String> pointList = [];
 
   var channel = WebSocketChannel.connect(
-    Uri.parse('ws://10.14.1.50:8080'),
+    Uri.parse('ws://10.14.1.81:8080'),
   );
 
   Future<void> getQuestion() async {
     await rootBundle.loadString("assets/question.json").then(
-      (value) {
+          (value) {
         for (int i = 0; i < value.length; i++) {
           if (json.decode(value)[i]["id"] == widget.question) {
             question = json.decode(value)[i]["question"];
@@ -78,373 +78,7 @@ class _MobileQuestionState extends State<MobileQuestion> {
   UserViewModel userViewModel;
 
   @override
-  Widget build(BuildContext context) {
-    userViewModel = Provider.of<UserViewModel>(context, listen: false);
-
-/*
-    getQuestions().then((value) {
-      getAnswers().then((ss) {});
-    });*/
-    Size size = MediaQuery.of(context).size;
-
-    return WillPopScope(
-      onWillPop: () async => false,
-      child: Scaffold(
-        body: StreamBuilder(
-            stream: channel.stream,
-            builder: (context, async) {
-              if (async.connectionState == ConnectionState.waiting) {
-                return Container(
-                  height: size.height,
-                  width: size.width,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      CircularProgressIndicator(
-                        color: mainColor,
-                      ),
-                      SizedBox(
-                        height: size.height * 0.04,
-                      ),
-                      Text(
-                        "Öğretmeninizin Sınavı Başlatması Bekleniyor",
-                        style: TextStyle(
-                            color: Colors.grey, fontWeight: FontWeight.bold),
-                      )
-                    ],
-                  ),
-                );
-              } else {
-                var socketMap = jsonDecode(async.data);
-                if (socketMap["type"] == "waiting") {
-                  return Container(
-                    height: size.height,
-                    width: size.width,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(widget.courseTitle,
-                          style: TextStyle(
-                              color: Colors.grey, fontWeight: FontWeight.bold),
-                        ),
-                        Lottie.asset("assets/lotties/waitingExam.json"),
-                        SizedBox(
-                          height: size.height * 0.04,
-                        ),
-                        Text(
-                          "Öğretmeninizin Sınavı Başlatması Bekleniyor",
-                          style: TextStyle(
-                              color: Colors.grey, fontWeight: FontWeight.bold),
-                        )
-                      ],
-                    ),
-                  );
-                } else if (socketMap["type"] == "examStart") {
-                  return Stack(
-                    children: [
-                      Container(
-                        child: ListView.builder(
-                          physics: BouncingScrollPhysics(),
-                          itemCount: 1,
-                          itemBuilder: (context, index) {
-                            return Padding(
-                              padding: EdgeInsets.only(
-                                  top: size.width * 0.1,
-                                  right: size.width * 0.06,
-                                  left: size.width * 0.06),
-                              child: Container(
-                                child: Column(
-                                  children: [
-                                    indexQ == 10
-                                        ? Container()
-                                        : questionTitle(
-                                            size, widget.question[indexQ]),
-                                    SizedBox(
-                                      height: size.width * 0.1,
-                                    ),
-                                    indexQ == 10
-                                        ? Center(
-                                            child: Column(
-                                              children: [
-                                                SizedBox(
-                                                  height: size.width * 0.2,
-                                                ),
-                                                Lottie.asset("assets/lotties/done.json",
-                                                    height: size.width * 0.8),
-                                                SizedBox(
-                                                  height: size.width * 0.1,
-                                                ),
-                                                Text(
-                                                  "Sınav Soruları Bitmiştir.",
-                                                  style: TextStyle(
-                                                      color: Colors.grey,
-                                                      fontWeight: FontWeight.bold,
-                                                      fontSize:
-                                                          size.width * 0.05),
-                                                )
-                                              ],
-                                            ),
-                                          )
-                                        : questionOption(widget.question[indexQ],
-                                            context, size),
-                                    SizedBox(
-                                      height: size.width * 0.06,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                      SafeArea(
-                        child: Padding(
-                          padding:
-                              EdgeInsets.only(left: 14.0, right: 14.0, top: 20),
-                          child: Column(
-                            children: [
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  InkWell(
-                                      onTap: () {
-                                        if (indexQ != 0) {
-                                          print("burda");
-                                          indexQ--;
-                                          setState(() {});
-                                        }
-                                      },
-                                      child: Icon(
-                                        Icons.arrow_back_ios,
-                                        color: indexQ == 0
-                                            ? Colors.grey
-                                            : Colors.black,
-                                      )),
-                                  Expanded(
-                                    child: StepProgressIndicator(
-                                      totalSteps: 10,
-                                      currentStep: indexQ,
-                                      selectedColor: mainColor,
-                                      unselectedColor: Colors.grey,
-                                      size: size.width * 0.06,
-                                      roundedEdges: Radius.circular(12),
-                                      customStep: (index, color, _) =>
-                                          color == mainColor
-                                              ? Container(
-                                                  color: color,
-                                                  child: Icon(
-                                                    Icons.check,
-                                                    color: Colors.white,
-                                                    size: size.width * 0.045,
-                                                  ),
-                                                )
-                                              : index == indexQ
-                                                  ? Container(
-                                                      color: color,
-                                                      child: Icon(
-                                                        Icons.circle_outlined,
-                                                        size: size.width * 0.04,
-                                                      ),
-                                                    )
-                                                  : Container(
-                                                      color: color,
-                                                      child: Icon(
-                                                        Icons.remove,
-                                                        size: size.width * 0.04,
-                                                      ),
-                                                    ),
-                                    ),
-                                  ),
-                                  InkWell(
-                                      onTap: () {
-                                        if (indexQ != 10) {
-                                          print("burda");
-                                          indexQ++;
-                                          setState(() {});
-                                        }
-                                      },
-                                      child: Icon(
-                                        Icons.arrow_forward_ios,
-                                        color: indexQ == 10
-                                            ? Colors.grey
-                                            : Colors.black,
-                                      )),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(10),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.5),
-                                      spreadRadius: 1,
-                                      blurRadius: 7,
-                                      offset: Offset(
-                                          0, 3), // changes position of shadow
-                                    ),
-                                  ],
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsets.all(5.0),
-                                  child: Text(
-                                    indexQ > 9
-                                        ? "Soru" + "10/10"
-                                        : "Soru" + " (${indexQ + 1}/10)",
-                                    style: TextStyle(
-                                        color: mainColor,
-                                        fontSize: size.width * 0.035,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Align(
-                        alignment: Alignment.bottomCenter,
-                        child: InkWell(
-                          onTap: () {
-                            var sumPoint;
-                            if (indexQ < 10) {
-                              oA = false;
-                              oB = false;
-                              oC = false;
-                              oD = false;
-                              oE = false;
-                              if (indexQ != 10) {
-                                indexQ++;
-
-                                var error = "";
-                                try {
-                                  if (selectionList[indexQ] == "" ||
-                                      selectionList[indexQ] == "a" ||
-                                      selectionList[indexQ] == "b" ||
-                                      selectionList[indexQ] == "c" ||
-                                      selectionList[indexQ] == "d" ||
-                                      selectionList[indexQ] == "e") {
-                                  } else {}
-                                } catch (e) {
-                                  print(e.toString() + " ddddd");
-                                  error = e.toString();
-                                }
-
-                                if (error.contains("RangeError")) {
-                                  selectionList.insert(indexQ, "");
-                                  pointList.insert(indexQ, "");
-                                }
-
-                                setState(() {});
-                              } else {}
-                            } else {
-                              var sum = 0;
-/*
-                              List<int> lint = pointList.map(int.parse).toList();
-                            */ /*  sumPoint= lint.reduce((a, b) => a + b);*/
-                              for (int i = 0; i < 10; i++) {
-                                if (pointList[i] == null || pointList[i] == "") {
-                                } else {
-                                  sum += int.parse(pointList[i]);
-                                }
-                              }
-                              sendPoint(sum);
-                            }
-                          },
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: mainColor,
-                              borderRadius: BorderRadius.only(
-                                  topRight: Radius.circular(8),
-                                  topLeft: Radius.circular(8)),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 1,
-                                  blurRadius: 7,
-                                  offset:
-                                      Offset(0, 3), // changes position of shadow
-                                ),
-                              ],
-                            ),
-                            height: size.width * 0.12,
-                            width: size.width,
-                            child: Center(
-                              child: Text(
-                                indexQ != 10 ? "Sonraki Soru" : "Bitir ve Tamamla",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: size.width * 0.05,
-                                    fontWeight: FontWeight.w600),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  );
-                } else {
-                  var sum = 0;
-
-                  for (int i = 0; i < 10; i++) {
-                    if (pointList[i] == null || pointList[i] == "") {
-                    } else {
-                      sum += int.parse(pointList[i]);
-                    }
-                  }
-                  return Container(
-                    child: Stack(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(top: size.width * 0.6),
-                          child: Align(
-                            alignment: Alignment.topCenter,
-                            child: Text(
-                              "Tebrikler",
-                              style: TextStyle(
-                                  fontSize: size.width * 0.08,
-                                  color: Colors.grey,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                        ),
-                        Lottie.asset("assets/succses.json",
-                            height: size.width * 3, width: size.width * 3),
-                        Align(
-                          alignment: Alignment.center,
-                          child: Image.asset(
-                            "assets/man.png",
-                            height: size.width * 0.35,
-                          ),
-                        ),
-                        Padding(
-                          padding:  EdgeInsets.only(bottom: size.width*0.6),
-                          child: Align(
-                            alignment: Alignment.bottomCenter,
-                            child: Text("Puanınız: ${sum}",style: TextStyle(fontSize: size.width*0.07,color: mainColor,fontWeight: FontWeight.bold),),
-                          ),
-                        ),
-                        Padding(
-                          padding:  EdgeInsets.only(bottom: size.width*0.1),
-                          child: Align(
-                            alignment: Alignment.bottomCenter,
-                            child: Text("Lütfen öğretmeninizin sınavı bitirmesini bekleyin.",style: TextStyle(fontSize: size.width*0.03,color: Colors.grey,fontWeight: FontWeight.bold),),
-                          ),
-                        ),
-                      ],
-                    ),
-                  );
-                }
-              }
-            }),
-      ),
-    );
-  }
+  Widget build(BuildContext context) {}
 
   Future waitingCheck() async {
     Map<String, dynamic> map = {
@@ -474,7 +108,7 @@ class _MobileQuestionState extends State<MobileQuestion> {
     for (int i = 0; i < 10; i++) {
       questionKey = await widget.question[0][i]["all_questions"].keys.first;
       questionT =
-          await widget.question[0][i]["all_questions"][questionKey]["question"];
+      await widget.question[0][i]["all_questions"][questionKey]["question"];
     }
 
     return questionTitle;
@@ -493,41 +127,32 @@ class _MobileQuestionState extends State<MobileQuestion> {
         ),
         indexQ == 10
             ? Container(
-                height: size.width * 0.2,
-              )
+          height: size.width * 0.2,
+        )
             : Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(12),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 1,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                ),
-                child: Padding(
-                  padding: EdgeInsets.all(size.width * 0.03),
-                  child: HtmlWidget(
-                    list[0],
-                  ),
-                ),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                spreadRadius: 1,
+                blurRadius: 7,
+                offset: Offset(0, 3), // changes position of shadow
               ),
+            ],
+          ),
+          child: Padding(
+            padding: EdgeInsets.all(size.width * 0.03),
+            child: HtmlWidget(
+              list[0],
+            ),
+          ),
+        ),
       ],
     );
   }
 
-/*
-Flexible(
-                    HtmlWidget(
-                      keyOptions[list[1].toString()]["value"],
-                      textStyle: TextStyle(
-                          fontFamily: "poppinsMedium", color: Colors.black),
-                    ),
-
-*/
   Widget questionOption(Map map, context, Size size) {
     Map map1 = map["all_questions"];
     String keyQuestion = map1.keys.toList().first.toString();
@@ -927,15 +552,15 @@ Flexible(
       answerList.addAll(widget.question[0][0]["all_questions"][questionKey]["answer_options"][answerKeys[i]]);
     }*/
     print(widget.question[0][indexQ]["all_questions"][questionKey]
-        ["answer_options"][answerKeys[0]]);
+    ["answer_options"][answerKeys[0]]);
     print(widget.question[0][indexQ]["all_questions"][questionKey]
-        ["answer_options"][answerKeys[1]]);
+    ["answer_options"][answerKeys[1]]);
     print(widget.question[0][indexQ]["all_questions"][questionKey]
-        ["answer_options"][answerKeys[2]]);
+    ["answer_options"][answerKeys[2]]);
     print(widget.question[0][indexQ]["all_questions"][questionKey]
-        ["answer_options"][answerKeys[3]]);
+    ["answer_options"][answerKeys[3]]);
     print(widget.question[0][indexQ]["all_questions"][questionKey]
-        ["answer_options"][answerKeys[4]]);
+    ["answer_options"][answerKeys[4]]);
   }
 }
 /*

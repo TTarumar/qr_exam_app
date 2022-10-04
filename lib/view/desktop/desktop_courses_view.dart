@@ -218,7 +218,7 @@ class _DesktopCoursesState extends State<DesktopCourses> {
                               left: 10,
                               bottom: 10,
                               child: Container(
-                                width: size.width * 0.1,
+                                width: size.width * 0.13,
                                 child: Text(
                                   async.data[index]['name'],
                                   overflow: TextOverflow.ellipsis,

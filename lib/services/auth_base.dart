@@ -8,6 +8,4 @@ abstract class AuthBase {
       String firstName,
       String lastName,
       ); //Kullanıcı kaydolma
-
-/*  Future<dynamic> forgotPassword(String email); //Şifremi unuttum mail gönderme*/
 }
