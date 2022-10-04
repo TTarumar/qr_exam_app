@@ -28,13 +28,13 @@
 
 **Mobil Uygulama**
 
-<img src="https://user-images.githubusercontent.com/47665779/193898427-0aa4f1ce-8a22-41a7-bf80-2a98152e7e9e.jpeg" width="600">
+<img src="https://user-images.githubusercontent.com/47665779/193898427-0aa4f1ce-8a22-41a7-bf80-2a98152e7e9e.jpeg" width="500">
 
-![WhatsApp Image 2022-09-30 at 14 49 29](https://user-images.githubusercontent.com/47665779/193898431-d2a1f421-b687-4dd0-8d71-67cba3abfa4c.jpeg)
+<img src="https://user-images.githubusercontent.com/47665779/193898431-d2a1f421-b687-4dd0-8d71-67cba3abfa4c.jpeg" width="500">
 
-![WhatsApp Image 2022-09-30 at 15 24 34 (1)](https://user-images.githubusercontent.com/47665779/193898437-2806d3b1-6dfa-4be6-89f0-e92bedd00f45.jpeg)
+<img src="https://user-images.githubusercontent.com/47665779/193898437-2806d3b1-6dfa-4be6-89f0-e92bedd00f45.jpeg" width="500">
 
-![WhatsApp Image 2022-09-30 at 15 24 34 (2)](https://user-images.githubusercontent.com/47665779/193898438-caf55600-1aea-4758-a4c7-2220a38ba4a1.jpeg)
+<img src="https://user-images.githubusercontent.com/47665779/193898438-caf55600-1aea-4758-a4c7-2220a38ba4a1.jpeg" width="500">
 
 
 
