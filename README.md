@@ -33,10 +33,11 @@
 
 ## **Projede Kullanılan Araçlar**
 
-#### Flutter & Android Studio - VsCode
+#### Flutter & Android Studio - VsCode & WebSocket
 ##### Flutter kurulumu için -> https://docs.flutter.dev/get-started/install
 ##### Android Studio kurulumu için -> https://developer.android.com/studio?authuser=1
 ##### Vs Code kurulumu için -> https://code.visualstudio.com/
+##### WebSocket kurulumu için -> https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
 
 
 ## **Mobil Uygulama Çıktısı İçin Adımlar**
