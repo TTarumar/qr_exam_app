@@ -9,6 +9,7 @@
 ## **Proje Ekran Görüntüleri**
 
 **Masaüstü Uygulaması**
+
 ![sss](https://user-images.githubusercontent.com/47665779/193897983-d86e24e6-23db-4bc5-9145-cb9ae7c5a65f.png)
 
 
@@ -27,7 +28,8 @@
 
 
 **Mobil Uygulama**
-![WhatsApp Image 2022-09-30 at 10 57 30](https://user-images.githubusercontent.com/47665779/193898427-0aa4f1ce-8a22-41a7-bf80-2a98152e7e9e.jpeg)
+
+![WhatsApp Image 2022-09-30 at 10 57 30](https://user-images.githubusercontent.com/47665779/193898427-0aa4f1ce-8a22-41a7-bf80-2a98152e7e9e.jpeg width="100")
 
 ![WhatsApp Image 2022-09-30 at 14 49 29](https://user-images.githubusercontent.com/47665779/193898431-d2a1f421-b687-4dd0-8d71-67cba3abfa4c.jpeg)
 
