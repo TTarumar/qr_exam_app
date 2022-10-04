@@ -1,22 +1,9 @@
 QrExam App
 
 
-# Heading1
+# Proje Özeti
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##### Sınıf ortamında çalışması planlanan akıllı tahta sınıf sınav uygulaması öğretmenin akıllı tahtadan sınavını yapmak istediği dersin karekodunu açması ile başlar. Akıllı tahtadaki karekodu mobil uygulama üzerinden okutan öğrenciler sınava giriş yapar ve soruları cevaplar. Sorularını tamamlayan öğrenciler sınavın sonlanması ile liderlik tablosundan veya mobil uygulamadan sınav puanını görebilir.
 
 
 
