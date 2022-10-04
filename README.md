@@ -76,3 +76,10 @@
 ##### 1- flutter build windows 
 ##### 2- Terminal ekranındaki dosyaya oluşturulan klasör ile güncellemeler yapılabilir
 
+## **Masaüstü Çıktısına Erişmek için**
+
+##### "Relases" kısmında bulunan "v0.1" içerisindeki rar dosyasını indirip erişebilirsiniz 
+
+## **Mobil Çıktısına Erişmek için**
+
+##### "qrExam" ismindeki apk dosyasını indirerek çalıştırabilirsiniz
