@@ -1,14 +1,14 @@
 # QrExam App
 
 
-## **Proje Özeti**
+## **Project Summary**
 
-##### Sınıf ortamında çalışması planlanan akıllı tahta sınıf sınav uygulaması öğretmenin akıllı tahtadan sınavını yapmak istediği dersin karekodunu açması ile başlar. Akıllı tahtadaki karekodu mobil uygulama üzerinden okutan öğrenciler sınava giriş yapar ve soruları cevaplar. Sorularını tamamlayan öğrenciler sınavın sonlanması ile liderlik tablosundan veya mobil uygulamadan sınav puanını görebilir.
+##### The smart board classroom exam application, which is planned to work in the classroom environment, starts with the teacher opening the QR code of the course he wants to take the exam from the smart board. Students who read the QR code on the smart board via the mobile application enter the exam and answer the questions. Students who complete their questions can see the exam score from the leaderboard or mobile application after the end of the exam.
 
 
-## **Proje Ekran Görüntüleri**
+## **Project Screens**
 
-**Masaüstü Uygulaması**
+**Desktop App**
 
 ![sss](https://user-images.githubusercontent.com/47665779/193897983-d86e24e6-23db-4bc5-9145-cb9ae7c5a65f.png)
 
@@ -26,21 +26,21 @@
 
 
 
-**Mobil Uygulama**
+**Mobile App**
 
 <img src="https://user-images.githubusercontent.com/47665779/193898427-0aa4f1ce-8a22-41a7-bf80-2a98152e7e9e.jpeg" width="220"> <img src="https://user-images.githubusercontent.com/47665779/193898431-d2a1f421-b687-4dd0-8d71-67cba3abfa4c.jpeg" width="220"> <img src="https://user-images.githubusercontent.com/47665779/193898437-2806d3b1-6dfa-4be6-89f0-e92bedd00f45.jpeg" width="220"> <img src="https://user-images.githubusercontent.com/47665779/193898438-caf55600-1aea-4758-a4c7-2220a38ba4a1.jpeg" width="220">
 
 
-## **Projede Kullanılan Araçlar**
+## **Tools Used in the Project**
 
 #### Flutter & Android Studio - VsCode & WebSocket
-##### Flutter kurulumu için -> https://docs.flutter.dev/get-started/install
-##### Android Studio kurulumu için -> https://developer.android.com/studio?authuser=1
-##### Vs Code kurulumu için -> https://code.visualstudio.com/
-##### WebSocket kurulumu için -> https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
+##### For Flutter -> https://docs.flutter.dev/get-started/install
+##### For Android Studio -> https://developer.android.com/studio?authuser=1
+##### For Vs Code -> https://code.visualstudio.com/
+##### For WebSocket  -> https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
 
 
-## **Projede Kullanılan Flutter Paketleri**
+## **Flutter Packages Used in the Project**
   ##### cupertino_icons: ^1.0.2
   ##### circular_countdown_timer: ^0.2.2
   ##### hexcolor: ^2.0.7
@@ -65,21 +65,21 @@
   ##### provider: ^5.0.0
   ##### html: ^0.15.0
 
-## **Mobil Uygulama Çıktısı İçin Adımlar**
+## **Steps for Mobile Application Output**
 
-##### 1- flutter build appbundle (Güncelleme İçin)
-##### 2- flutter build apk --split-per-abi (Apk İçin)
-##### 3- Terminal ekranındaki dosyaya oluşturulan klasör ile güncellemeler yapılabilir
+##### 1- flutter build appbundle (For Upgrade)
+##### 2- flutter build apk --split-per-abi (For Apk)
+##### 3- Updates can be made to the file on the terminal screen with the created folder.
 
-## **Masaüstü Uygulama Çıktısı İçin Adımlar**
+## **Steps for Desktop Application Output**
 
 ##### 1- flutter build windows 
-##### 2- Terminal ekranındaki dosyaya oluşturulan klasör ile güncellemeler yapılabilir
+##### 2- Updates can be made to the file on the terminal screen with the created folder.
 
-## **Masaüstü Çıktısına Erişmek için**
+## **To Access Desktop Output**
 
-##### "Relases" kısmında bulunan "v0.1" içerisindeki rar dosyasını indirip erişebilirsiniz 
+##### You can download and access the rar file in "v0.1" in the "Relases" section.
 
-## **Mobil Çıktısına Erişmek için**
+## **To Access Mobile Output**
 
-##### "qrExam" ismindeki apk dosyasını indirerek çalıştırabilirsiniz
+##### You can run the apk file named "qrExam" by downloading it.
